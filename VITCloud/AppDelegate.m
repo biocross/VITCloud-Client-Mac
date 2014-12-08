@@ -10,7 +10,6 @@
 
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
 @end
 
 @implementation AppDelegate
@@ -21,6 +20,15 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+}
+
+-(void)awakeFromNib{
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    self.statusItem.title = @"VITc";
+    self.statusItem.highlightMode = YES;
+    self.statusItem.menu = self.mainMenu;
+    
+    
 }
 
 @end

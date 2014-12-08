@@ -10,6 +10,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property NSStatusItem *statusItem;
+@property (strong) IBOutlet NSMenu *mainMenu;
 
 @end
 
