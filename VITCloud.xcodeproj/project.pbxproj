@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		162ADBB61A35E7C800BFDA05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 162ADBB51A35E7C800BFDA05 /* AppDelegate.m */; };
+		162ADBB81A35E7C800BFDA05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 162ADBB71A35E7C800BFDA05 /* main.m */; };
+		162ADBBA1A35E7C800BFDA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162ADBB91A35E7C800BFDA05 /* Images.xcassets */; };
+		162ADBBD1A35E7C800BFDA05 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162ADBBB1A35E7C800BFDA05 /* MainMenu.xib */; };
+		162ADBC91A35E7C800BFDA05 /* VITCloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162ADBC81A35E7C800BFDA05 /* VITCloudTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		162ADBC31A35E7C800BFDA05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 162ADBA71A35E7C800BFDA05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 162ADBAE1A35E7C800BFDA05;
+			remoteInfo = VITCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		162ADBAF1A35E7C800BFDA05 /* VITCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VITCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		162ADBB31A35E7C800BFDA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		162ADBB41A35E7C800BFDA05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		162ADBB51A35E7C800BFDA05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		162ADBB71A35E7C800BFDA05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		162ADBB91A35E7C800BFDA05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		162ADBBC1A35E7C800BFDA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		162ADBC21A35E7C800BFDA05 /* VITCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VITCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		162ADBC71A35E7C800BFDA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		162ADBC81A35E7C800BFDA05 /* VITCloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VITCloudTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		162ADBAC1A35E7C800BFDA05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162ADBBF1A35E7C800BFDA05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		162ADBA61A35E7C800BFDA05 = {
+			isa = PBXGroup;
+			children = (
+				162ADBB11A35E7C800BFDA05 /* VITCloud */,
+				162ADBC51A35E7C800BFDA05 /* VITCloudTests */,
+				162ADBB01A35E7C800BFDA05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		162ADBB01A35E7C800BFDA05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				162ADBAF1A35E7C800BFDA05 /* VITCloud.app */,
+				162ADBC21A35E7C800BFDA05 /* VITCloudTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		162ADBB11A35E7C800BFDA05 /* VITCloud */ = {
+			isa = PBXGroup;
+			children = (
+				162ADBB41A35E7C800BFDA05 /* AppDelegate.h */,
+				162ADBB51A35E7C800BFDA05 /* AppDelegate.m */,
+				162ADBB91A35E7C800BFDA05 /* Images.xcassets */,
+				162ADBBB1A35E7C800BFDA05 /* MainMenu.xib */,
+				162ADBB21A35E7C800BFDA05 /* Supporting Files */,
+			);
+			path = VITCloud;
+			sourceTree = "<group>";
+		};
+		162ADBB21A35E7C800BFDA05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				162ADBB31A35E7C800BFDA05 /* Info.plist */,
+				162ADBB71A35E7C800BFDA05 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		162ADBC51A35E7C800BFDA05 /* VITCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				162ADBC81A35E7C800BFDA05 /* VITCloudTests.m */,
+				162ADBC61A35E7C800BFDA05 /* Supporting Files */,
+			);
+			path = VITCloudTests;
+			sourceTree = "<group>";
+		};
+		162ADBC61A35E7C800BFDA05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				162ADBC71A35E7C800BFDA05 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		162ADBAE1A35E7C800BFDA05 /* VITCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 162ADBCC1A35E7C800BFDA05 /* Build configuration list for PBXNativeTarget "VITCloud" */;
+			buildPhases = (
+				162ADBAB1A35E7C800BFDA05 /* Sources */,
+				162ADBAC1A35E7C800BFDA05 /* Frameworks */,
+				162ADBAD1A35E7C800BFDA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VITCloud;
+			productName = VITCloud;
+			productReference = 162ADBAF1A35E7C800BFDA05 /* VITCloud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		162ADBC11A35E7C800BFDA05 /* VITCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 162ADBCF1A35E7C800BFDA05 /* Build configuration list for PBXNativeTarget "VITCloudTests" */;
+			buildPhases = (
+				162ADBBE1A35E7C800BFDA05 /* Sources */,
+				162ADBBF1A35E7C800BFDA05 /* Frameworks */,
+				162ADBC01A35E7C800BFDA05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				162ADBC41A35E7C800BFDA05 /* PBXTargetDependency */,
+			);
+			name = VITCloudTests;
+			productName = VITCloudTests;
+			productReference = 162ADBC21A35E7C800BFDA05 /* VITCloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		162ADBA71A35E7C800BFDA05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Siddharth Gupta";
+				TargetAttributes = {
+					162ADBAE1A35E7C800BFDA05 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					162ADBC11A35E7C800BFDA05 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 162ADBAE1A35E7C800BFDA05;
+					};
+				};
+			};
+			buildConfigurationList = 162ADBAA1A35E7C800BFDA05 /* Build configuration list for PBXProject "VITCloud" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 162ADBA61A35E7C800BFDA05;
+			productRefGroup = 162ADBB01A35E7C800BFDA05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				162ADBAE1A35E7C800BFDA05 /* VITCloud */,
+				162ADBC11A35E7C800BFDA05 /* VITCloudTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		162ADBAD1A35E7C800BFDA05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162ADBBA1A35E7C800BFDA05 /* Images.xcassets in Resources */,
+				162ADBBD1A35E7C800BFDA05 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162ADBC01A35E7C800BFDA05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		162ADBAB1A35E7C800BFDA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162ADBB81A35E7C800BFDA05 /* main.m in Sources */,
+				162ADBB61A35E7C800BFDA05 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		162ADBBE1A35E7C800BFDA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162ADBC91A35E7C800BFDA05 /* VITCloudTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		162ADBC41A35E7C800BFDA05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 162ADBAE1A35E7C800BFDA05 /* VITCloud */;
+			targetProxy = 162ADBC31A35E7C800BFDA05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		162ADBBB1A35E7C800BFDA05 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				162ADBBC1A35E7C800BFDA05 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		162ADBCA1A35E7C800BFDA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		162ADBCB1A35E7C800BFDA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		162ADBCD1A35E7C800BFDA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VITCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		162ADBCE1A35E7C800BFDA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VITCloud/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		162ADBD01A35E7C800BFDA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VITCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VITCloud.app/Contents/MacOS/VITCloud";
+			};
+			name = Debug;
+		};
+		162ADBD11A35E7C800BFDA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VITCloudTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VITCloud.app/Contents/MacOS/VITCloud";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		162ADBAA1A35E7C800BFDA05 /* Build configuration list for PBXProject "VITCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162ADBCA1A35E7C800BFDA05 /* Debug */,
+				162ADBCB1A35E7C800BFDA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		162ADBCC1A35E7C800BFDA05 /* Build configuration list for PBXNativeTarget "VITCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162ADBCD1A35E7C800BFDA05 /* Debug */,
+				162ADBCE1A35E7C800BFDA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		162ADBCF1A35E7C800BFDA05 /* Build configuration list for PBXNativeTarget "VITCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162ADBD01A35E7C800BFDA05 /* Debug */,
+				162ADBD11A35E7C800BFDA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 162ADBA71A35E7C800BFDA05 /* Project object */;
+}
