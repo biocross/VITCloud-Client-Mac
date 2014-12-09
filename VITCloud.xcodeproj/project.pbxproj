@@ -12,6 +12,7 @@
 		162ADBBA1A35E7C800BFDA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162ADBB91A35E7C800BFDA05 /* Images.xcassets */; };
 		162ADBBD1A35E7C800BFDA05 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162ADBBB1A35E7C800BFDA05 /* MainMenu.xib */; };
 		162ADBC91A35E7C800BFDA05 /* VITCloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162ADBC81A35E7C800BFDA05 /* VITCloudTests.m */; };
+		16EB1B581A37501500CDC0D0 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EB1B571A37501500CDC0D0 /* WindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		162ADBC21A35E7C800BFDA05 /* VITCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VITCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		162ADBC71A35E7C800BFDA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		162ADBC81A35E7C800BFDA05 /* VITCloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VITCloudTests.m; sourceTree = "<group>"; };
+		16EB1B561A37501500CDC0D0 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		16EB1B571A37501500CDC0D0 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 			children = (
 				162ADBB41A35E7C800BFDA05 /* AppDelegate.h */,
 				162ADBB51A35E7C800BFDA05 /* AppDelegate.m */,
+				16EB1B561A37501500CDC0D0 /* WindowController.h */,
+				16EB1B571A37501500CDC0D0 /* WindowController.m */,
 				162ADBB91A35E7C800BFDA05 /* Images.xcassets */,
 				162ADBBB1A35E7C800BFDA05 /* MainMenu.xib */,
 				162ADBB21A35E7C800BFDA05 /* Supporting Files */,
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				162ADBB81A35E7C800BFDA05 /* main.m in Sources */,
+				16EB1B581A37501500CDC0D0 /* WindowController.m in Sources */,
 				162ADBB61A35E7C800BFDA05 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +404,7 @@
 				162ADBCE1A35E7C800BFDA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		162ADBCF1A35E7C800BFDA05 /* Build configuration list for PBXNativeTarget "VITCloudTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +413,7 @@
 				162ADBD11A35E7C800BFDA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

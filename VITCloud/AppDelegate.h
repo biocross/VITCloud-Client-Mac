@@ -12,6 +12,7 @@
 
 @property NSStatusItem *statusItem;
 @property (strong) IBOutlet NSMenu *mainMenu;
+@property (weak) IBOutlet NSWindow *window;
 
 @end
 
