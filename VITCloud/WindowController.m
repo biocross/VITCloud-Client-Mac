@@ -18,15 +18,18 @@
     
     if ( [panel runModal] == NSOKButton )
     {
-        // Get an array containing the full filenames of all
-        // files and directories selected.
+
         NSArray* files = [panel URLs];
+        
+        [self.folder1Path setStringValue:[files[0] lastPathComponent]];
         
         // Loop through all the files and process them.
         
         NSArray* dirs = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:files[0] includingPropertiesForKeys:@[NSFileSize, NSFileType] options:NSDirectoryEnumerationSkipsHiddenFiles error:nil];
         
         NSLog(@"%@", [dirs description]);
+        
+        
         
         for (NSURL *file in dirs){
             NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfItemAtPath: [file path] error: NULL];
