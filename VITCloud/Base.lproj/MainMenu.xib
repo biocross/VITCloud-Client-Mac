@@ -744,14 +744,6 @@
                             </objectValues>
                         </comboBoxCell>
                     </comboBox>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-jW-cDa">
-                        <rect key="frame" x="387" y="366" width="44" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hostel" id="Hnd-k1-1d4">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYX-6s-Uu9">
                         <rect key="frame" x="188" y="398" width="104" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="User Details:" id="KU6-wp-pIw">
@@ -777,15 +769,15 @@
                         </textFieldCell>
                     </textField>
                     <textField identifier="textDownloads" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crc-YR-ILG">
-                        <rect key="frame" x="39" y="221" width="297" height="22"/>
+                        <rect key="frame" x="110" y="219" width="297" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Downloads" drawsBackground="YES" id="Pk7-TS-lhf">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button identifier="Downloads" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvD-0K-ATL">
-                        <rect key="frame" x="371" y="215" width="77" height="32"/>
+                    <button identifier="textDownloads" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvD-0K-ATL">
+                        <rect key="frame" x="14" y="213" width="77" height="32"/>
                         <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jdh-Cr-44o">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -795,15 +787,15 @@
                         </connections>
                     </button>
                     <textField identifier="textMovies" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vI-d4-RPu">
-                        <rect key="frame" x="39" y="180" width="297" height="22"/>
+                        <rect key="frame" x="110" y="178" width="297" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Example: Movies" drawsBackground="YES" id="TP4-gs-4a5">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button identifier="Movies" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7NI-hj-z1R">
-                        <rect key="frame" x="371" y="174" width="77" height="32"/>
+                    <button identifier="textMovies" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7NI-hj-z1R">
+                        <rect key="frame" x="13" y="172" width="77" height="32"/>
                         <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cqu-WJ-IsQ">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -813,15 +805,15 @@
                         </connections>
                     </button>
                     <textField identifier="textTVSeries" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAp-4H-yiG">
-                        <rect key="frame" x="39" y="139" width="297" height="22"/>
+                        <rect key="frame" x="110" y="137" width="297" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Example: TV Series" drawsBackground="YES" id="8xX-Gh-Hsg">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button identifier="TVSeries" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-hv-BXo">
-                        <rect key="frame" x="371" y="133" width="77" height="32"/>
+                    <button identifier="textTVSeries" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-hv-BXo">
+                        <rect key="frame" x="13" y="131" width="77" height="32"/>
                         <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xFU-ai-trf">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -831,15 +823,15 @@
                         </connections>
                     </button>
                     <textField identifier="textDocumentaries" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Sj-wT-f5q">
-                        <rect key="frame" x="39" y="98" width="297" height="22"/>
+                        <rect key="frame" x="110" y="96" width="297" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Example: Documentaries" drawsBackground="YES" id="WmD-Hs-mgK">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button identifier="Docs" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-PD-mzZ">
-                        <rect key="frame" x="371" y="92" width="77" height="32"/>
+                    <button identifier="textDocumentaries" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-PD-mzZ">
+                        <rect key="frame" x="13" y="90" width="77" height="32"/>
                         <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cha-o3-4mD">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -848,7 +840,7 @@
                             <action selector="buttonDocumentaries:" target="nGF-nQ-BNT" id="C7J-yt-dt9"/>
                         </connections>
                     </button>
-                    <button identifier="Docs" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agE-FC-pAh">
+                    <button identifier="SaveSettings" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agE-FC-pAh">
                         <rect key="frame" x="348" y="13" width="123" height="32"/>
                         <buttonCell key="cell" type="push" title="Save Settings" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Tvm-bZ-uN3">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -856,6 +848,54 @@
                         </buttonCell>
                         <connections>
                             <action selector="saveButton:" target="nGF-nQ-BNT" id="DLd-t5-K23"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-jW-cDa">
+                        <rect key="frame" x="378" y="360" width="69" height="23"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hostel" id="Hnd-k1-1d4">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Pr-mh-YRr">
+                        <rect key="frame" x="436" y="222" width="15" height="15"/>
+                        <buttonCell key="cell" type="inline" title="X" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="Wa5-aV-QOX">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="removeDownloads:" target="nGF-nQ-BNT" id="B3R-xH-lqD"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdZ-oj-AXq">
+                        <rect key="frame" x="436" y="181" width="15" height="15"/>
+                        <buttonCell key="cell" type="inline" title="X" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="iqC-a0-b0g">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="removeMovies:" target="nGF-nQ-BNT" id="hyd-LG-dgD"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zez-iQ-XDM">
+                        <rect key="frame" x="436" y="140" width="15" height="15"/>
+                        <buttonCell key="cell" type="inline" title="X" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="swD-qC-0sd">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="removeTVSeries:" target="nGF-nQ-BNT" id="fAK-ro-ZbC"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlc-gb-HU5">
+                        <rect key="frame" x="436" y="99" width="15" height="15"/>
+                        <buttonCell key="cell" type="inline" title="X" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="iJc-Qk-ycN">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="removeDocumentaries:" target="nGF-nQ-BNT" id="KSV-XS-O1U"/>
                         </connections>
                     </button>
                 </subviews>

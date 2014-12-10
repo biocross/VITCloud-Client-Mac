@@ -25,4 +25,9 @@
 @property (weak) IBOutlet NSTextField *textRoomNo;
 @property (weak) IBOutlet NSComboBox *textHostel;
 - (IBAction)saveButton:(id)sender;
+
+- (IBAction)removeDownloads:(id)sender;
+- (IBAction)removeMovies:(id)sender;
+- (IBAction)removeTVSeries:(id)sender;
+- (IBAction)removeDocumentaries:(id)sender;
 @end

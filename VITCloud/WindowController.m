@@ -18,9 +18,13 @@
     NSArray *textFields = @[self.textDownloads, self.textMovies, self.textTvSeries, self.textDocumentaries, self.textBlock, self.textHostel, self.textRoomNo];
     
     for(NSTextField *textField in textFields){
-        if([defaults stringForKey:textField.identifier]){
+        if([[defaults objectForKey:textField.identifier] isKindOfClass:[NSURL class]]){
+            textField.stringValue = [[defaults URLForKey:textField.identifier] path];
+        }
+        else if([[defaults objectForKey:textField.identifier] isKindOfClass:[NSString class]]){
             textField.stringValue = [defaults stringForKey:textField.identifier];
         }
+        
         
     }
     
@@ -36,34 +40,26 @@
     {
 
         NSArray* files = [panel URLs];
-        
         NSButton *pressedButton = (NSButton *)sender;
         
         
-        if([pressedButton.identifier isEqualToString:@"Downloads"]){
+        if([pressedButton.identifier isEqualToString:@"textDownloads"]){
             self.textDownloads.stringValue = files[0];
         }
-        else if([pressedButton.identifier isEqualToString:@"Movies"]){
+        else if([pressedButton.identifier isEqualToString:@"textMovies"]){
             self.textMovies.stringValue = files[0];
         }
-        else if([pressedButton.identifier isEqualToString:@"TVSeries"]){
+        else if([pressedButton.identifier isEqualToString:@"textTVSeries"]){
             self.textTvSeries.stringValue = files[0];
         }
         else {
             self.textDocumentaries.stringValue = files[0];
         }
         
-        NSArray* dirs = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:files[0] includingPropertiesForKeys:@[NSFileSize, NSFileType] options:NSDirectoryEnumerationSkipsHiddenFiles error:nil];
-        
-        NSLog(@"%@", [dirs description]);
-        
-        
-        
-        for (NSURL *file in dirs){
-            NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfItemAtPath: [file path] error: NULL];
-            NSLog(@"%@", [file lastPathComponent]);
-            NSLog(@"%llu MB", (([attrs fileSize]/1000)/1000));
-        }
+        //Save URL to NSUserDefaults
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults removeObjectForKey:pressedButton.identifier];
+        [defaults setURL:files[0] forKey:pressedButton.identifier];
     }
 }
 - (IBAction)buttonDownloads:(id)sender {
@@ -111,15 +107,34 @@
         return;
     }
     
-    
+    //Saving User Data
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    NSArray *textFields = @[self.textDownloads, self.textMovies, self.textTvSeries, self.textDocumentaries, self.textBlock, self.textHostel, self.textRoomNo];
+    NSArray *textFields = @[self.textBlock, self.textHostel, self.textRoomNo];
     
     for(NSTextField *textField in textFields){
         [defaults removeObjectForKey:textField.identifier];
         [defaults setObject:textField.stringValue forKey:textField.identifier];
     }
     NSLog(@"Saved!");
+}
+
+- (IBAction)removeDownloads:(id)sender {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"textDownloads"];
+    self.textDownloads.stringValue = @"";
+}
+
+- (IBAction)removeMovies:(id)sender {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"textMovies"];
+    self.textMovies.stringValue = @"";
+}
+
+- (IBAction)removeTVSeries:(id)sender {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"textTVSeries"];
+    self.textTvSeries.stringValue = @"";
+}
+
+- (IBAction)removeDocumentaries:(id)sender {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"textDocumentaries"];
+    self.textDocumentaries.stringValue = @"";
 }
 @end

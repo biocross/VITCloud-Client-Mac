@@ -20,4 +20,26 @@
     return sharedMyManager;
 }
 
+-(void)beginScanning{
+    NSArray *keys = @[@"textDownloads", @"textMovies", @"textTVSeries", @"textDocumentaries" ];
+    for (NSString *key in keys){
+        if([[NSUserDefaults standardUserDefaults] URLForKey:key]){
+            [self scanForFilesAtPath:[[NSUserDefaults standardUserDefaults] URLForKey:key]];
+        }
+    }
+}
+
+-(void)scanForFilesAtPath:(NSURL *)path{
+    NSArray* dirs = [[NSFileManager defaultManager] contentsOfDirectoryAtURL:path includingPropertiesForKeys:@[NSFileSize, NSFileType] options:NSDirectoryEnumerationSkipsHiddenFiles error:nil];
+    
+    NSLog(@"Scanned Directory: %@", [dirs description]);
+    
+    
+    for (NSURL *file in dirs){
+        NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfItemAtPath: [file path] error: NULL];
+        NSLog(@"%@", [file lastPathComponent]);
+        NSLog(@"%llu MB", (([attrs fileSize]/1000)/1000));
+    }
+}
+
 @end
