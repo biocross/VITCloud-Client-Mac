@@ -10,6 +10,19 @@
 
 @interface WindowController : NSWindow
 
-@property (weak) IBOutlet NSTextField *folder1Path;
-- (IBAction)folder1ButtonClicked:(id)sender;
+
+@property (weak) IBOutlet NSTextField *textDownloads;
+@property (weak) IBOutlet NSTextField *textMovies;
+@property (weak) IBOutlet NSTextField *textTvSeries;
+@property (weak) IBOutlet NSTextField *textDocumentaries;
+
+- (IBAction)buttonDownloads:(id)sender;
+- (IBAction)buttonMovies:(id)sender;
+- (IBAction)buttonTvSeries:(id)sender;
+- (IBAction)buttonDocumentaries:(id)sender;
+
+@property (weak) IBOutlet NSTextField *textBlock;
+@property (weak) IBOutlet NSTextField *textRoomNo;
+@property (weak) IBOutlet NSComboBox *textHostel;
+- (IBAction)saveButton:(id)sender;
 @end

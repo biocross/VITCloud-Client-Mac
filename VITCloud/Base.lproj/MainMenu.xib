@@ -686,40 +686,22 @@
         <window title="VITCloud" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="nGF-nQ-BNT" customClass="WindowController">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="131" y="165" width="480" height="397"/>
+            <rect key="contentRect" x="131" y="165" width="480" height="435"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" id="LJr-hm-RlI">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="397"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="435"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crc-YR-ILG">
-                        <rect key="frame" x="39" y="208" width="297" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Folder 1" drawsBackground="YES" id="Pk7-TS-lhf">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvD-0K-ATL">
-                        <rect key="frame" x="371" y="202" width="77" height="32"/>
-                        <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jdh-Cr-44o">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="folder1ButtonClicked:" target="nGF-nQ-BNT" id="ZmZ-8q-aJi"/>
-                        </connections>
-                    </button>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zwf-Ir-62L">
-                        <rect key="frame" x="20" y="304" width="96" height="22"/>
+                    <textField identifier="textBlock" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zwf-Ir-62L">
+                        <rect key="frame" x="20" y="336" width="96" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="Block" drawsBackground="YES" id="VPN-BP-205">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AhW-D9-hoZ">
-                        <rect key="frame" x="192" y="304" width="96" height="22"/>
+                    <textField identifier="textRoom" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AhW-D9-hoZ">
+                        <rect key="frame" x="192" y="336" width="96" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="Room" drawsBackground="YES" id="jSB-8U-2EL">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -727,7 +709,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QD0-o4-Mgy">
-                        <rect key="frame" x="17" y="279" width="446" height="17"/>
+                        <rect key="frame" x="17" y="311" width="446" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="-----------------------------------------------------------" id="e5m-TL-wHr">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -735,7 +717,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-BK-y9f">
-                        <rect key="frame" x="47" y="334" width="42" height="17"/>
+                        <rect key="frame" x="47" y="366" width="42" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Block:" id="qjC-OJ-Khn">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -743,15 +725,15 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0j-dw-zJS">
-                        <rect key="frame" x="207" y="335" width="67" height="17"/>
+                        <rect key="frame" x="207" y="367" width="67" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Room No." id="VOz-uI-byn">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5hi-Xm-5so">
-                        <rect key="frame" x="364" y="302" width="99" height="26"/>
+                    <comboBox identifier="textHostel" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5hi-Xm-5so">
+                        <rect key="frame" x="364" y="334" width="99" height="26"/>
                         <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="Hostel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="uRy-DQ-6iA">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -763,7 +745,7 @@
                         </comboBoxCell>
                     </comboBox>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-jW-cDa">
-                        <rect key="frame" x="387" y="334" width="44" height="17"/>
+                        <rect key="frame" x="387" y="366" width="44" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hostel" id="Hnd-k1-1d4">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -771,7 +753,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYX-6s-Uu9">
-                        <rect key="frame" x="188" y="360" width="104" height="17"/>
+                        <rect key="frame" x="188" y="398" width="104" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="User Details:" id="KU6-wp-pIw">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -779,20 +761,117 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTs-oc-vJ2">
-                        <rect key="frame" x="171" y="254" width="139" height="17"/>
+                        <rect key="frame" x="171" y="286" width="139" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Media File Locations:" id="kaN-N2-zhP">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8x-vb-ZnL">
+                        <rect key="frame" x="123" y="261" width="235" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="(Select as many folders as you want)" id="mC7-Ui-ngN">
+                            <font key="font" metaFont="cellTitle"/>
+                            <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField identifier="textDownloads" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crc-YR-ILG">
+                        <rect key="frame" x="39" y="221" width="297" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Downloads" drawsBackground="YES" id="Pk7-TS-lhf">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button identifier="Downloads" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvD-0K-ATL">
+                        <rect key="frame" x="371" y="215" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jdh-Cr-44o">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonDownloads:" target="nGF-nQ-BNT" id="qVN-bN-5vC"/>
+                        </connections>
+                    </button>
+                    <textField identifier="textMovies" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vI-d4-RPu">
+                        <rect key="frame" x="39" y="180" width="297" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Example: Movies" drawsBackground="YES" id="TP4-gs-4a5">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button identifier="Movies" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7NI-hj-z1R">
+                        <rect key="frame" x="371" y="174" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cqu-WJ-IsQ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonMovies:" target="nGF-nQ-BNT" id="kUa-px-uwf"/>
+                        </connections>
+                    </button>
+                    <textField identifier="textTVSeries" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAp-4H-yiG">
+                        <rect key="frame" x="39" y="139" width="297" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Example: TV Series" drawsBackground="YES" id="8xX-Gh-Hsg">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button identifier="TVSeries" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-hv-BXo">
+                        <rect key="frame" x="371" y="133" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xFU-ai-trf">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonTvSeries:" target="nGF-nQ-BNT" id="vVt-Nh-B5k"/>
+                        </connections>
+                    </button>
+                    <textField identifier="textDocumentaries" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Sj-wT-f5q">
+                        <rect key="frame" x="39" y="98" width="297" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Example: Documentaries" drawsBackground="YES" id="WmD-Hs-mgK">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button identifier="Docs" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-PD-mzZ">
+                        <rect key="frame" x="371" y="92" width="77" height="32"/>
+                        <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cha-o3-4mD">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonDocumentaries:" target="nGF-nQ-BNT" id="C7J-yt-dt9"/>
+                        </connections>
+                    </button>
+                    <button identifier="Docs" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agE-FC-pAh">
+                        <rect key="frame" x="348" y="13" width="123" height="32"/>
+                        <buttonCell key="cell" type="push" title="Save Settings" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Tvm-bZ-uN3">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="saveButton:" target="nGF-nQ-BNT" id="DLd-t5-K23"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <connections>
                 <outlet property="folder1Button" destination="wvD-0K-ATL" id="eYp-dR-MG1"/>
                 <outlet property="folder1Path" destination="crc-YR-ILG" id="jbp-ZZ-VNQ"/>
+                <outlet property="textBlock" destination="Zwf-Ir-62L" id="jCY-cf-CkN"/>
+                <outlet property="textDocumentaries" destination="3Sj-wT-f5q" id="FXx-Xz-DKf"/>
+                <outlet property="textDownloads" destination="crc-YR-ILG" id="YdN-52-Ddk"/>
+                <outlet property="textHostel" destination="5hi-Xm-5so" id="TEK-6E-z3c"/>
+                <outlet property="textMovies" destination="1vI-d4-RPu" id="r3H-TX-gVa"/>
+                <outlet property="textRoomNo" destination="AhW-D9-hoZ" id="Lsl-yi-awb"/>
+                <outlet property="textTvSeries" destination="JAp-4H-yiG" id="QP6-8Z-q2H"/>
             </connections>
-            <point key="canvasLocation" x="309" y="363.5"/>
+            <point key="canvasLocation" x="309" y="382.5"/>
         </window>
     </objects>
 </document>
