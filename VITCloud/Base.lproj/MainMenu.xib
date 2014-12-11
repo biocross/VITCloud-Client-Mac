@@ -14,7 +14,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="mainMenu" destination="afU-vw-bBx" id="gPh-ge-PYN"/>
+                <outlet property="mainMenu" destination="afU-vw-bBx" id="uIG-nD-cDU"/>
+                <outlet property="statusText" destination="0KY-jo-Is4" id="EeO-Uw-WvF"/>
                 <outlet property="window" destination="nGF-nQ-BNT" id="Glm-wh-aw4"/>
             </connections>
         </customObject>
@@ -676,12 +677,25 @@
                 <menuItem isSeparatorItem="YES" id="XVp-iW-jsh"/>
                 <menuItem title="Folders and Preferences" id="AOd-7i-cmn">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openPreferences:" target="Voe-Tx-rLC" id="Z8n-8F-Il1"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="About" id="DHk-va-rZg">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openAbout:" target="Voe-Tx-rLC" id="Oft-Y4-XNc"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="y7K-pm-AMz"/>
+                <menuItem title="Quit" id="xO8-yB-yGx">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitApp:" target="Voe-Tx-rLC" id="2Cn-bD-tYC"/>
+                    </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="103.5" y="-137.5"/>
+            <point key="canvasLocation" x="161" y="-33.5"/>
         </menu>
         <window title="VITCloud" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="nGF-nQ-BNT" customClass="WindowController">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>

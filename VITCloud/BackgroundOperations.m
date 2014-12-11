@@ -23,14 +23,23 @@
 }
 
 -(void)beginScanning{
-    NSArray *keys = @[@"textDownloads", @"textMovies", @"textTVSeries", @"textDocumentaries" ];
-    for (NSString *key in keys){
-        if([[NSUserDefaults standardUserDefaults] URLForKey:key]){
-            [self scanForFilesAtPath:[[NSUserDefaults standardUserDefaults] URLForKey:key]];
-        }
-    }
-    NSLog(@"After Scanning: %@", [self.allFiles description]);
+    dispatch_queue_t downloadQueue = dispatch_queue_create("fileScanner", nil);
+    dispatch_async(downloadQueue, ^{
     
+            NSArray *keys = @[@"textDownloads", @"textMovies", @"textTVSeries", @"textDocumentaries" ];
+            for (NSString *key in keys){
+                if([[NSUserDefaults standardUserDefaults] URLForKey:key]){
+                    [self scanForFilesAtPath:[[NSUserDefaults standardUserDefaults] URLForKey:key]];
+                }
+            }
+    
+        dispatch_async(dispatch_get_main_queue(), ^{});
+
+        NSLog(@"After Scanning: %@", [self.allFiles description]);
+        //Call Uploader Here.
+        
+    });
+
 }
 
 -(void)scanForFilesAtPath:(NSURL *)path{
@@ -42,6 +51,7 @@
         NSLog(@"Error scanning directory: %@", [error description]); //Handles Disconnected Media like external HDD, etc.
         return YES;
     }];
+    
     while (file = [enumerator nextObject])
     {
         // check if it's a directory

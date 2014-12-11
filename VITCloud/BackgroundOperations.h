@@ -15,4 +15,6 @@
 @property NSMutableArray *allFiles;
 -(void)beginScanning;
 @property NSArray *supportedExtensions;
+
+
 @end

@@ -7,12 +7,22 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "BackgroundOperations.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property NSStatusItem *statusItem;
 @property (strong) IBOutlet NSMenu *mainMenu;
 @property (weak) IBOutlet NSWindow *window;
+
+-(void)setStatus:(NSString *)text;
+-(void)setStatusIconProgress:(BOOL)boolean;
+
+@property (weak) IBOutlet NSMenuItem *statusText;
+
+- (IBAction)openPreferences:(id)sender;
+- (IBAction)openAbout:(id)sender;
+- (IBAction)quitApp:(id)sender;
 
 @end
 

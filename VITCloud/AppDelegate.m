@@ -21,7 +21,7 @@
     self.statusItem.highlightMode = YES;
     self.statusItem.menu = self.mainMenu;
         
-    //[self.window close];
+    [self.window close];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -29,5 +29,30 @@
 }
 
 
+-(void)setStatus:(NSString *)text{
+    [self.statusText setTitle:text];
+}
 
+-(void)setStatusIconProgress:(BOOL)boolean{
+    if(boolean){
+        //set Animating Icon
+    }
+    else{
+        //set normal icon
+    }
+}
+
+
+
+
+- (IBAction)openPreferences:(id)sender {
+    NSWindowController *controllerWindow = [[NSWindowController alloc] initWithWindow:self.window];
+    [controllerWindow showWindow:self];
+}
+
+- (IBAction)openAbout:(id)sender {
+}
+
+- (IBAction)quitApp:(id)sender {
+}
 @end
