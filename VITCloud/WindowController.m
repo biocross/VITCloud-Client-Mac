@@ -7,6 +7,7 @@
 //
 
 #import "WindowController.h"
+#import "BackgroundOperations.h"
 
 @implementation WindowController
 
@@ -116,6 +117,10 @@
         [defaults setObject:textField.stringValue forKey:textField.identifier];
     }
     NSLog(@"Saved!");
+}
+
+- (IBAction)scanNowButton:(id)sender {
+    [[BackgroundOperations singleton] beginScanning];
 }
 
 - (IBAction)removeDownloads:(id)sender {

@@ -12,6 +12,6 @@
 
 
 + (id)singleton;
-
-
+@property NSMutableArray *allFiles;
+-(void)beginScanning;
 @end

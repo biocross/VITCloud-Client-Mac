@@ -20,8 +20,7 @@
     self.statusItem.title = @"VITc";
     self.statusItem.highlightMode = YES;
     self.statusItem.menu = self.mainMenu;
-    
-    
+        
     //[self.window close];
 }
 
