@@ -48,6 +48,8 @@
 - (IBAction)openPreferences:(id)sender {
     NSWindowController *controllerWindow = [[NSWindowController alloc] initWithWindow:self.window];
     [controllerWindow showWindow:self];
+    
+    [self.window orderFrontRegardless];
 }
 
 - (IBAction)openAbout:(id)sender {

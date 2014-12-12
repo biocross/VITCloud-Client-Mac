@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AppDelegate.h"
 
-@interface BackgroundOperations : NSObject
+@interface BackgroundOperations : NSObject 
 
 
 + (id)singleton;
@@ -16,5 +17,7 @@
 -(void)beginScanning;
 @property NSArray *supportedExtensions;
 
+@property NSError *error;
+@property NSURLResponse *response;
 
 @end

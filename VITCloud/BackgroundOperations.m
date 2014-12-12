@@ -23,6 +23,12 @@
 }
 
 -(void)beginScanning{
+    //Clear data before rescanning:
+    self.allFiles = nil;
+    self.allFiles = [[NSMutableArray alloc] init];
+    AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+    [appDelegate setStatus:@"Scanning"];
+    
     dispatch_queue_t downloadQueue = dispatch_queue_create("fileScanner", nil);
     dispatch_async(downloadQueue, ^{
     
@@ -37,10 +43,91 @@
 
         NSLog(@"After Scanning: %@", [self.allFiles description]);
         //Call Uploader Here.
+        [self prepareForUpload];
         
     });
 
 }
+
+-(void)prepareForUpload{
+    NSMutableDictionary *POSTData = [[NSMutableDictionary alloc] init];
+    [POSTData setValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"textBlock"] forKey:@"Block"];
+    [POSTData setValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"textRoom"] forKey:@"Room"];
+    [POSTData setValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"textHostel"] forKey:@"Hostel"];
+    
+    
+    [POSTData setValue:self.allFiles forKey:@"Files"];
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+    [appDelegate setStatus:@"Uploading"];
+    
+    BOOL internetConnected = NO;
+    //Check if internet reachable
+    NSURL *scriptUrl = [NSURL URLWithString:@"http://google.com/m"];
+    NSData *data = [NSData dataWithContentsOfURL:scriptUrl];
+    if (data){
+        NSLog(@"Device is connected to the internet");
+        internetConnected = YES;
+    }
+    else{
+        NSLog(@"Device is not connected to the internet");
+    }
+    
+    
+    if(!internetConnected){
+        NSLog(@"No Internet Connection");
+        [appDelegate setStatus:@"No Internet Connection"];
+        return;
+    }
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:POSTData options:0 error:nil];
+    NSLog(@"Sending JSON Object: %@",[[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
+
+    dispatch_queue_t downloadQueue = dispatch_queue_create("jsonUploader", nil);
+    dispatch_async(downloadQueue, ^{
+        
+        NSLog(@"Started Request");
+        NSURL *url = [NSURL URLWithString:@"http://localhost:8000/interface"];
+        NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
+        NSError *error = nil;
+        NSURLResponse *response = nil;
+        [request setHTTPMethod:@"POST"];
+        [request setHTTPBody:jsonData];
+        [NSURLConnection sendSynchronousRequest:request
+                              returningResponse:&response
+                                          error:&error];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{});
+        
+            if(error){
+                NSLog(@"Error: %@", [error localizedDescription]);
+            }
+            else{
+                NSInteger httpCode = [(NSHTTPURLResponse *)response statusCode];
+                
+                if(!httpCode){
+                    NSLog(@"No Response Code Recieved");
+                }
+                else{
+                    NSLog(@"Request seems to be successful with response code: %ld", (long)httpCode);
+                }
+            }
+        
+        [appDelegate setStatus:@"Index Upload Complete"];
+    });
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+}
+
+
 
 -(void)scanForFilesAtPath:(NSURL *)path{
     
@@ -70,7 +157,7 @@
                     if(fileSize > 100000000){
                         [self.allFiles addObject:[file lastPathComponent]];
                         [self.allFiles addObject:[NSString stringWithFormat:@"%llu", fileSize]];
-                        
+
                     }
                 }
             }
