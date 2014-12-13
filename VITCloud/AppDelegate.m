@@ -17,7 +17,10 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    self.statusItem.title = @"VITc";
+    self.statusItem.title = @"";
+    self.statusItem.image = [NSImage imageNamed:@"Cloud_Cloud"];
+    [self setStatus:@"Idle"];
+    self.statusItem.toolTip = [NSString stringWithFormat:@"VITCloud | %@", self.statusText.title];
     self.statusItem.highlightMode = YES;
     self.statusItem.menu = self.mainMenu;
         
@@ -36,14 +39,13 @@
 -(void)setStatusIconProgress:(BOOL)boolean{
     if(boolean){
         //set Animating Icon
+        self.statusItem.image = [NSImage imageNamed:@"Cloud_Sync"];
     }
     else{
         //set normal icon
+        self.statusItem.image = [NSImage imageNamed:@"Cloud_Cloud"];
     }
 }
-
-
-
 
 - (IBAction)openPreferences:(id)sender {
     NSWindowController *controllerWindow = [[NSWindowController alloc] initWithWindow:self.window];

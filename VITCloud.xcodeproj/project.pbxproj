@@ -14,6 +14,8 @@
 		162ADBC91A35E7C800BFDA05 /* VITCloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162ADBC81A35E7C800BFDA05 /* VITCloudTests.m */; };
 		16A0B77A1A3855C90010235A /* BackgroundOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0B7791A3855C90010235A /* BackgroundOperations.m */; };
 		16EB1B581A37501500CDC0D0 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EB1B571A37501500CDC0D0 /* WindowController.m */; };
+		16FE13B11A3CBABE00163071 /* Cloud_Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FE13AF1A3CBABE00163071 /* Cloud_Cloud.png */; };
+		16FE13B21A3CBABE00163071 /* Cloud_Sync.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FE13B01A3CBABE00163071 /* Cloud_Sync.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		16A0B7791A3855C90010235A /* BackgroundOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundOperations.m; sourceTree = "<group>"; };
 		16EB1B561A37501500CDC0D0 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		16EB1B571A37501500CDC0D0 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		16FE13AF1A3CBABE00163071 /* Cloud_Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cloud_Cloud.png; sourceTree = "<group>"; };
+		16FE13B01A3CBABE00163071 /* Cloud_Sync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cloud_Sync.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		162ADBB21A35E7C800BFDA05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16FE13AF1A3CBABE00163071 /* Cloud_Cloud.png */,
+				16FE13B01A3CBABE00163071 /* Cloud_Sync.png */,
 				162ADBB31A35E7C800BFDA05 /* Info.plist */,
 				162ADBB71A35E7C800BFDA05 /* main.m */,
 			);
@@ -201,8 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FE13B21A3CBABE00163071 /* Cloud_Sync.png in Resources */,
 				162ADBBA1A35E7C800BFDA05 /* Images.xcassets in Resources */,
 				162ADBBD1A35E7C800BFDA05 /* MainMenu.xib in Resources */,
+				16FE13B11A3CBABE00163071 /* Cloud_Cloud.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

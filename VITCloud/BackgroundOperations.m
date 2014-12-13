@@ -28,6 +28,7 @@
     self.allFiles = [[NSMutableArray alloc] init];
     AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
     [appDelegate setStatus:@"Scanning"];
+    [appDelegate setStatusIconProgress:YES];
     
     dispatch_queue_t downloadQueue = dispatch_queue_create("fileScanner", nil);
     dispatch_async(downloadQueue, ^{
@@ -77,6 +78,7 @@
     if(!internetConnected){
         NSLog(@"No Internet Connection");
         [appDelegate setStatus:@"No Internet Connection"];
+        [appDelegate setStatusIconProgress:NO];
         return;
     }
     
@@ -114,6 +116,7 @@
             }
         
         [appDelegate setStatus:@"Index Upload Complete"];
+        [appDelegate setStatusIconProgress:NO];
     });
     
     
