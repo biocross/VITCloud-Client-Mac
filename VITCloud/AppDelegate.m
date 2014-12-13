@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BackgroundOperations.h"
 
 @interface AppDelegate ()
 
@@ -19,12 +20,35 @@
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.title = @"";
     self.statusItem.image = [NSImage imageNamed:@"Cloud_Cloud"];
-    [self setStatus:@"Idle"];
+    
+    [self initEverything];
+}
+
+-(void)initEverything{
+    
+    
+    self.scanNowButton.enabled = NO;
+    
+    if([[[NSUserDefaults standardUserDefaults] stringForKey:@"basicSetupComplete"] isEqualToString:@"YES"]){
+        [self.window close];
+        [self setStatus:@"Idle"];
+        self.scanNowButton.enabled = YES;
+        [NSTimer scheduledTimerWithTimeInterval:7200.0 target:self selector:@selector(beginScanning) userInfo:nil repeats:YES];
+        
+    }
+    else{
+        NSLog(@"Basic Parameters are needed. Opening Prefs Window");
+        [self setStatus:@"Basic Setup Required"];
+    }
+    
+    
     self.statusItem.toolTip = [NSString stringWithFormat:@"VITCloud | %@", self.statusText.title];
     self.statusItem.highlightMode = YES;
     self.statusItem.menu = self.mainMenu;
-        
-    [self.window close];
+}
+
+-(void)beginScanning{
+    [[BackgroundOperations singleton] beginScanning];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -58,5 +82,8 @@
 }
 
 - (IBAction)quitApp:(id)sender {
+}
+- (IBAction)scanNowPressed:(id)sender {
+    [self beginScanning];
 }
 @end

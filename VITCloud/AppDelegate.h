@@ -23,6 +23,10 @@
 - (IBAction)openPreferences:(id)sender;
 - (IBAction)openAbout:(id)sender;
 - (IBAction)quitApp:(id)sender;
+@property (weak) IBOutlet NSMenuItem *scanNowButton;
+- (IBAction)scanNowPressed:(id)sender;
+
+-(void)initEverything;
 
 @end
 

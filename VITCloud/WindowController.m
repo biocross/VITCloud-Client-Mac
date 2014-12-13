@@ -116,6 +116,9 @@
         [defaults removeObjectForKey:textField.identifier];
         [defaults setObject:textField.stringValue forKey:textField.identifier];
     }
+    [defaults setObject:@"YES" forKey:@"basicSetupComplete"];
+    AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+    [appDelegate initEverything];
     NSLog(@"Saved!");
 }
 

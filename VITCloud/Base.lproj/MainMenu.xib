@@ -15,6 +15,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="mainMenu" destination="afU-vw-bBx" id="uIG-nD-cDU"/>
+                <outlet property="scanNowButton" destination="2DZ-0n-bpC" id="FDh-wj-YDw"/>
                 <outlet property="statusText" destination="0KY-jo-Is4" id="EeO-Uw-WvF"/>
                 <outlet property="window" destination="nGF-nQ-BNT" id="Glm-wh-aw4"/>
             </connections>
@@ -675,6 +676,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="XVp-iW-jsh"/>
+                <menuItem title="Scan Now" id="2DZ-0n-bpC">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="scanNowPressed:" target="Voe-Tx-rLC" id="c4E-gF-Ma2"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Folders and Preferences" id="AOd-7i-cmn">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

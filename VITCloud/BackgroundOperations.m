@@ -119,15 +119,6 @@
         [appDelegate setStatusIconProgress:NO];
     });
     
-    
-    
-    
-    
-    
-   
-    
-    
-    
 }
 
 
